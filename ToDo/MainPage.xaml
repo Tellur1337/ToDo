@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToDo.MainPage">
+
+    <StackLayout BackgroundColor="MediumAquamarine" >
+        <StackLayout BackgroundColor="Black">
+
+            <StackLayout Padding="10" Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Label TextColor="Snow" Text="Мои задачи" FontSize="28"></Label>
+                    <Button Clicked="AddJob" Text="+" Padding="1" FontSize="18" BackgroundColor="Snow" HeightRequest="35" WidthRequest="35" ></Button>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Button Clicked="Button_Clicked" Text="Done jobs" FontSize="12" ClassId="Done" Padding="3" BackgroundColor="Snow"></Button>
+                    <Button Clicked="Button_Clicked" Text="Current jobs" FontSize="12" ClassId="Added" Padding="3" BackgroundColor="Snow"></Button>
+                    <Button Clicked="Button_Clicked" Text="All jobs" FontSize="12" ClassId="All" Padding="3" BackgroundColor="Snow"></Button>
+                    <Button Clicked="Button_Clicked" Text="Today's jobs" FontSize="12" ClassId="Today" Padding="3" BackgroundColor="Snow"></Button>
+                </StackLayout>
+            </StackLayout>
+
+        </StackLayout>
+
+        <Label x:Name="JobInformation" FontSize="24" TextColor="Black" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" ></Label>
+
+        <StackLayout >
+            <ListView RowHeight="170" WidthRequest="350" HorizontalOptions="Center" VerticalOptions="Center" x:Name="listOfJobs" ItemsSource="{Binding}" ItemSelected="SelectedItem">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="Black" HeightRequest="1000" WidthRequest="1000">
+                                    <StackLayout BackgroundColor="Snow" Padding="5" Margin="5,5,5,5" MinimumHeightRequest="220" HeightRequest="300">
+                                        <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding Name}" FontSize="28" />
+                                        <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding Date_Time}" FontSize="Medium" />
+                                        <Label TextColor="Black" HorizontalTextAlignment="Center" Text="{Binding Decription}" FontSize="Medium" />
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

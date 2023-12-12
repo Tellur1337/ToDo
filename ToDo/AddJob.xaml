@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToDo.AddJob">
+    <ContentPage.Content>
+        <StackLayout Padding="15,15,15,0" BackgroundColor="MediumAquamarine">
+            <Label Text="Создание задачи" HorizontalTextAlignment="Center" TextColor="Black" FontSize="28"></Label>
+            <StackLayout BackgroundColor="Black" Margin="0,0,0,5">
+                <Label HorizontalTextAlignment="Center" TextColor="Snow" Text="Название задачи" FontSize="24"></Label>
+                <Entry Placeholder="Введите название задачи..." TextColor="Gray" x:Name="job_name" PlaceholderColor="LightCyan"></Entry>
+            </StackLayout>
+            <StackLayout BackgroundColor="Black" Margin="0,0,0,5">
+                <Label HorizontalTextAlignment="Center" TextColor="Snow" Text="Выберите дату задачи" FontSize="24"></Label>
+                <DatePicker x:Name="job_date" TextColor="Gray"></DatePicker>
+            </StackLayout>
+            <StackLayout BackgroundColor="Black" Margin="0,0,0,5">
+                <Label HorizontalTextAlignment="Center" TextColor="Snow" Text="Выберите время задачи" FontSize="24"></Label>
+                <TimePicker x:Name="job_time" TextColor="Gray" ></TimePicker>
+            </StackLayout>
+            <StackLayout BackgroundColor="Black" Margin="0,0,0,5">
+                <Label HorizontalTextAlignment="Center" TextColor="Snow" Text="Добавьте описание задачи..." FontSize="24"></Label>
+                <Entry TextColor="Gray" Placeholder="Добавьте описание события" x:Name="job_description" PlaceholderColor="LightCyan" ></Entry>
+            </StackLayout>
+            <Button BackgroundColor="Black" TextColor="Snow" Text="Добавить задачу" Clicked="Button_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

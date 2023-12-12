@@ -1,0 +1,12 @@
+C:\Users\tellu\source\repos\ToDo\ToDo\obj\Debug\netstandard2.0\ToDo.csproj.AssemblyReference.cache
+C:\Users\tellu\source\repos\ToDo\ToDo\obj\Debug\netstandard2.0\ToDo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tellu\source\repos\ToDo\ToDo\obj\Debug\netstandard2.0\AddJob.xaml.g.cs
+C:\Users\tellu\source\repos\ToDo\ToDo\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\tellu\source\repos\ToDo\ToDo\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\tellu\source\repos\ToDo\ToDo\obj\Debug\netstandard2.0\UpdateJob.xaml.g.cs
+C:\Users\tellu\source\repos\ToDo\ToDo\obj\Debug\netstandard2.0\ToDo.AssemblyInfoInputs.cache
+C:\Users\tellu\source\repos\ToDo\ToDo\obj\Debug\netstandard2.0\ToDo.AssemblyInfo.cs
+C:\Users\tellu\source\repos\ToDo\ToDo\obj\Debug\netstandard2.0\ToDo.csproj.CoreCompileInputs.cache
+C:\Users\tellu\source\repos\ToDo\ToDo\obj\Debug\netstandard2.0\ToDo.dll
+C:\Users\tellu\source\repos\ToDo\ToDo\obj\Debug\netstandard2.0\refint\ToDo.dll
+C:\Users\tellu\source\repos\ToDo\ToDo\obj\Debug\netstandard2.0\ToDo.pdb
